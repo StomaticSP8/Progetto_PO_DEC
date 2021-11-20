@@ -12,10 +12,11 @@ import com.example.PPO_Dicembre_model.citta;
 @RestController
 
 public class PersonController {
-	public citta v =new citta("perano","1200");
+
 	@GetMapping("/ciao")
-	public String exampleMethod(@RequestParam(name="param1", defaultValue="none") String param1) {
-		return v.getNome();
+	public citta exampleMethod(@RequestParam(name="param1", defaultValue="none") String param1) {
+		return  new citta("perano","1200");
+		
 				
 				
 			//List<citta> list= new ArrayList<citta>();
