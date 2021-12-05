@@ -19,13 +19,16 @@ import com.example.PPO_Dicembre_model.body_Response;
 
 /**
  * 
- * @return costruttore della classe filter date che mi setta la body response inserita dall'utente. 
+ *  costruttore della classe filter date che mi setta la body response inserita dall'utente. 
  *
  */
 
 public class Filter_date {
 	body_Response bod= new body_Response();
-	
+	/**
+	 * 
+	 * @param body setta bod uguale alla bodyresponse body inserita dall'utente
+	 */
 	public Filter_date(body_Response body)
 	{
 		this.bod.setEmployment_type(body.getEmployment_type());

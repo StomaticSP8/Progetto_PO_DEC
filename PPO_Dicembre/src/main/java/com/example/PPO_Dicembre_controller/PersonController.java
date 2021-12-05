@@ -36,11 +36,12 @@ import com.example.PPO_Dicembre_model.citta;
 
 
 /**
-@return questa rotta suggerisce all'utente le 5 città americane 
+ questa rotta suggerisce all'utente le 5 città americane 
 abbiamo definito una classe città poi abbiamo generato 5 città americane messe all'interno di un vettore
 e successivamente vengono  stampate.
 
 */
+
 
 @RestController
 

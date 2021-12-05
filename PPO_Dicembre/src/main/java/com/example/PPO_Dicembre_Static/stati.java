@@ -13,11 +13,7 @@ import com.example.PPO_Dicembre_Parser.Api_Parser;
 import com.example.PPO_Dicembre_model.body_Response;
 
 
-/**
- * 
- * @param j,k,i,t,d sono contatori/variabili utilizzati nei metodi
- *
- */
+
 public class  stati extends parametri_statistica
 {
 	private  double j=0;
