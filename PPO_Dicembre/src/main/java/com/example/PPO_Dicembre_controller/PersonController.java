@@ -1,5 +1,9 @@
 package com.example.PPO_Dicembre_controller;
-
+/**
+ * @author Antonio Zaccardi
+ * @author Francesco Cerrone
+ *
+ */
 
 import java.text.ParseException;
 import java.util.*;
@@ -31,10 +35,12 @@ import com.example.PPO_Dicembre_model.citta;
 
 
 
+/**
+@return questa rotta suggerisce all'utente le 5 città americane 
+abbiamo definito una classe città poi abbiamo generato 5 città americane messe all'interno di un vettore
+e successivamente vengono  stampate.
 
-
-
-
+*/
 
 @RestController
 
@@ -49,6 +55,15 @@ public Vector<citta>  citta_consigliate() {
 	
 	
 }
+/**
+ * 
+ * @param filter_3
+ * @return questa rotta applica i filtri che abbiamo creato e restituisce il risultato del filtro in formato json
+ * @throws input_exception
+ * @throws Exception_numero_citta
+ * @throws ParseException
+ */
+
 @PostMapping ("/Filter")
 public Vector<JSONObject> Filter_final (@RequestBody  body_Response filter_3) throws input_exception, Exception_numero_citta, ParseException
 {
@@ -61,6 +76,14 @@ if ( filter_3.body_check())
 		return vg.filter_date_tre_cit();
    }
 }
+/**
+ * 
+ * @param sta
+ * @return /Static effettua le statistiche, possono anche essere filtrate e restituisce un oggetto parametri_statistica in json 
+ * @throws Exception_numero_citta
+ * @throws ParseException
+ */
+
 @PostMapping ("/Static")
 public parametri_statistica statica (@RequestBody body_Response sta) throws Exception_numero_citta, ParseException
 {

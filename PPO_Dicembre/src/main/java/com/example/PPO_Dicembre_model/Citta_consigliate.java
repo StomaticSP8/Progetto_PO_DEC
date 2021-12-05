@@ -1,5 +1,11 @@
 package com.example.PPO_Dicembre_model;
 
+/**
+ * @author Antonio Zaccardi
+ * @author Francesco Cerrone
+ *
+ */
+
 import java.util.Vector;
 
 public class Citta_consigliate {
@@ -15,7 +21,9 @@ public class Citta_consigliate {
 	}
 	
 	
-	
+	/**
+	 *  questo metodo carica le 5 citta all'interno di un vettore di tipo citta
+	 */
 	
 	public void inserire_le_citta() {
 		citta c1= new citta("Los Angeles","California");
@@ -30,7 +38,10 @@ public class Citta_consigliate {
 		v.add(c5);
 
 	}
-	
+	/**
+	 * 
+	 * @return restituisce la stampa del vettore di tipo citta
+	 */
 	public Vector<citta> stampa_citta()
 	{
 		return v;

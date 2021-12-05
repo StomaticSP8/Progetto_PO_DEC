@@ -8,7 +8,11 @@ import org.springframework.web.bind.annotation.RestController;
 
 import org.springframework.boot.SpringApplication;
 import org.springframework.boot.autoconfigure.SpringBootApplication;
-
+/**
+ * @author Antonio Zaccardi
+ * @author Francesco Cerrone
+ *
+ */
 
 @SpringBootApplication
 @ComponentScan("com.example.PPO_Dicembre_controller")

@@ -1,9 +1,13 @@
 package com.example.PPO_Dicembre_Static;
-
+/**
+ * @author Antonio Zaccardi
+ * @author Francesco Cerrone
+ *
+ */
 import java.util.Vector;
 
 public class parametri_statistica {
-	
+
 	
 	private double lavoro_in_remoto;
 	private double quantita_lavori_in_remoto;
@@ -13,7 +17,10 @@ public class parametri_statistica {
 	private Vector <String> top_5= new Vector<String>();
 	
 	
-	
+	/**
+	 * 
+	 * @return restutuisce un vettore di stringhe costituito dai 16 linguaggi di programmazione più utilizzati oltre java
+	 */
 	
 	
 	public Vector <String >carico_linguaggio()

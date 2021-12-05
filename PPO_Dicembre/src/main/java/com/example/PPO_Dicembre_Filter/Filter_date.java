@@ -10,8 +10,18 @@ import org.json.simple.JSONObject;
 
 import com.example.PPO_Dicembre_Exception.Exception_numero_citta;
 import com.example.PPO_Dicembre_model.body_Response;
+/**
+ * @author Antonio Zaccardi
+ * @author Francesco Cerrone
+ *
+ */
 
 
+/**
+ * 
+ * @return costruttore della classe filter date che mi setta la body response inserita dall'utente. 
+ *
+ */
 
 public class Filter_date {
 	body_Response bod= new body_Response();
@@ -30,7 +40,13 @@ public class Filter_date {
 	}
 	
 	
-	
+	/**
+	 * 
+	 * @return questo metodo effettua il filtro della data per una o più città, la data se è stata inserita dall'utente e restituisce il risultato filtrato,
+	 * altrimenti effttua il filtro di altri parametri.
+	 * @throws Exception_numero_citta
+	 * @throws ParseException
+	 */
 	
 	public Vector<JSONObject> filter_date_tre_cit() throws Exception_numero_citta, ParseException
 	{

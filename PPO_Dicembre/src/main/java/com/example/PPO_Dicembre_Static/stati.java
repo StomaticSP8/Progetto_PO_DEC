@@ -1,5 +1,9 @@
 package com.example.PPO_Dicembre_Static;
-
+/**
+ * @author Antonio Zaccardi
+ * @author Francesco Cerrone
+ *
+ */
 import java.util.Vector;
 
 import org.json.simple.JSONArray;
@@ -9,7 +13,11 @@ import com.example.PPO_Dicembre_Parser.Api_Parser;
 import com.example.PPO_Dicembre_model.body_Response;
 
 
-
+/**
+ * 
+ * @param j,k,i,t,d sono contatori/variabili utilizzati nei metodi
+ *
+ */
 public class  stati extends parametri_statistica
 {
 	private  double j=0;
@@ -20,8 +28,11 @@ private int d;
 	
 	
 	
-	
-	
+	/**
+	 * 
+	 * @param par è un vettore di jsonobject contenente i dati filtrati per il calcolo della percentuale remota 
+	 * @return un oggetto chiamato parametri statistica che calcola la percentuale e la quantità di lavoro in remoto 
+	 */
 	public parametri_statistica percentuale_remote(Vector <JSONObject> par)
 	{
 		for (i=0; i<par.size(); i++)
@@ -54,7 +65,12 @@ private int d;
 	}
 	
 	
-	
+	/**
+	 * 
+	 * @param vg è un vettore di jsonobject contenente i dati filtrati per il calcolo degli altri linguaggi di programmazione 
+	 * @param bh è un vettore contenente i 20 linguaggi di programmazione più utilizzati 
+	 * @return restituisce un vettore di stringa contenenti i liguaggi di programmazione oltre java trovati esaminando i dati in ingresso 
+	 */
 	public Vector<String> altri_linguaggi_f(Vector<JSONObject> vg, Vector<String> bh)
 	{
 		Vector<JSONObject> fv = vg;

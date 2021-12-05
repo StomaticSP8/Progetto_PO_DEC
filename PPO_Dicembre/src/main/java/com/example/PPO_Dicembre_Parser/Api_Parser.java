@@ -1,5 +1,10 @@
 package com.example.PPO_Dicembre_Parser;
 
+/**
+ * @author Antonio Zaccardi
+ * @author Francesco Cerrone
+ *
+ */
 import java.io.BufferedReader;
 import java.io.IOException;
 import java.io.InputStreamReader;
@@ -52,7 +57,10 @@ public class Api_Parser {
 
 	
 	
-	
+	/**
+	 * 
+	 * @return stampa un vettore jsonobject
+	 */
 	public Vector<JSONObject> lista()
 	{
 		return v;
@@ -60,7 +68,10 @@ public class Api_Parser {
 	}
 	
 
-	
+	/**
+	 * effettua la chiamata api in base al numero di citta ed effettua il parser
+	 * @throws Exception_numero_citta
+	 */
 	public void Parser_tre_citta() throws Exception_numero_citta
 	{
 		JSONParser parser = new JSONParser();
@@ -145,7 +156,10 @@ public class Api_Parser {
 	
 	
 	
-	
+	/**
+	 * 
+	 * @return effettua la chiamata api in base al numero di citta, effettua il parser e mi restituisce un jsonarray nel campo result.
+	 */
 	
 	public Vector< JSONArray> Parser_Array_tre_citta()
 	{

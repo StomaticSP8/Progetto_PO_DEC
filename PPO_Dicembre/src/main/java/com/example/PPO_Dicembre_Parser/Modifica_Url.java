@@ -1,5 +1,10 @@
 package com.example.PPO_Dicembre_Parser;
 
+/**
+ * @author Antonio Zaccardi
+ * @author Francesco Cerrone
+ *
+ */
 import java.net.MalformedURLException;
 import java.net.URL;
 import java.util.Vector;
@@ -37,7 +42,10 @@ public Modifica_Url(body_Response body)
 	this.body.setNumero_citta(body.getNumero_citta());
 }
 
-
+/**
+ * 
+ * @return crea un vettore di url per 3 location diverse 
+ */
 	
 	public Vector<URL> piu_cit()
 	{

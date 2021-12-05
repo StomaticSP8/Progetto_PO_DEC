@@ -1,6 +1,13 @@
 package com.example.PPO_Dicembre_model;
 
+/**
+ * @author Antonio Zaccardi
+ * @author Francesco Cerrone
+ *
+ */
+
 import com.example.PPO_Dicembre_Exception.input_exception;
+
 
 public class body_Response {
 	
@@ -32,7 +39,6 @@ public class body_Response {
 	
 
 	
-
 
 	public String getData() {
 		return data;
@@ -86,6 +92,11 @@ public class body_Response {
 		this.location3="";
 			
 	}
+	/**
+	 * 
+	 * @return controlla se il body inserito dall'utente sia nullo se lo è lancia l'eccezzione
+	 * @throws input_exception
+	 */
 	public boolean body_check() throws input_exception
 	{
 		if ((this.location=="")&&(this.location2=="")&&(this.location3=="")&&(this.keywords=="")&&(this.employment_type=="")&&(this.numero_citta==0)&&(this.remote=="")&&(this.role==""))  
