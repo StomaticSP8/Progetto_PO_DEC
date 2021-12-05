@@ -1,13 +1,23 @@
 package com.example.PPO_Dicembre_model;
 
 public class citta {
+
 	private String nome;
-private  String numero_abitanti;
+	private String stato;
 	
-	public citta (String nome,  String numero_abitanti) {
+	public citta(String nome, String stato)
+	{
 		this.nome=nome;
-		this.numero_abitanti=numero_abitanti;
-		
+		this.stato=stato;
+	
+	}
+
+	public String getStato() {
+		return stato;
+	}
+
+	public void setStato(String stato) {
+		this.stato = stato;
 	}
 
 	public String getNome() {
@@ -17,13 +27,10 @@ private  String numero_abitanti;
 	public void setNome(String nome) {
 		this.nome = nome;
 	}
+	
+	
 
-	public String getNumero_abitanti() {
-		return numero_abitanti;
-	}
-
-	public void setNumero_abitanti(String numero_abitanti) {
-		this.numero_abitanti = numero_abitanti;
-	}
+	
+	
 
 }
