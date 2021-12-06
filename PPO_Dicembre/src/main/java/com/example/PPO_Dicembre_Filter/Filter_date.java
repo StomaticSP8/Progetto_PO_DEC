@@ -47,7 +47,7 @@ public class Filter_date {
 	 * 
 	 * @return questo metodo effettua il filtro della data per una o più città, la data se è stata inserita dall'utente e restituisce il risultato filtrato,
 	 * altrimenti effttua il filtro di altri parametri.
-	 * @throws Exception_numero_citta
+	 * @throws Exception_numero_citta non inserito il numero delle città
 	 * @throws ParseException
 	 */
 	

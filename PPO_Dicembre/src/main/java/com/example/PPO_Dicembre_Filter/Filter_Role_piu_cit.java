@@ -8,11 +8,7 @@ import org.json.simple.JSONObject;
 import com.example.PPO_Dicembre_Exception.Exception_numero_citta;
 import com.example.PPO_Dicembre_Parser.Api_Parser;
 import com.example.PPO_Dicembre_model.body_Response;
-/**
- * @author Antonio Zaccardi
- * @author Francesco Cerrone
- *
- */
+
 
 
 public class Filter_Role_piu_cit {
@@ -24,7 +20,11 @@ public class Filter_Role_piu_cit {
 	Vector<JSONObject> filtrato= new Vector<JSONObject>();
 	private body_Response body = new body_Response();
 	
-	
+/**
+ * @author Antonio Zaccardi
+ * @author Francesco Cerrone
+ *
+ */
 	
 	public Filter_Role_piu_cit(body_Response body)
 	{
@@ -44,7 +44,7 @@ public class Filter_Role_piu_cit {
 	 * 
 	 * @return effettua il filtro del ruolo per una o più città e restituisce un vettore di jsonobject con gli elementi filtrati,
 	 *se il ruolo non è stato inserito dall' utente effettua il filtro su altri parametri 
-	 * @throws Exception_numero_citta   
+	 * @throws Exception_numero_citta  non inserito il numero delle città 
 	 */
 	public Vector<JSONObject> filtra_role_3() throws Exception_numero_citta
 	{

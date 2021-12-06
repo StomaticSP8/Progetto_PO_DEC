@@ -1,9 +1,5 @@
 package com.example.PPO_Dicembre_controller;
-/**
- * @author Antonio Zaccardi
- * @author Francesco Cerrone
- *
- */
+
 
 import java.text.ParseException;
 import java.util.*;
@@ -35,18 +31,24 @@ import com.example.PPO_Dicembre_model.citta;
 
 
 
+
+/**
+ * @author Antonio Zaccardi
+ * @author Francesco Cerrone
+ *
+ */
+
+@RestController
+
+public class PersonController {
+@GetMapping("/Sug")
+
 /**
  questa rotta suggerisce all'utente le 5 città americane 
 abbiamo definito una classe città poi abbiamo generato 5 città americane messe all'interno di un vettore
 e successivamente vengono  stampate.
 
 */
-
-
-@RestController
-
-public class PersonController {
-@GetMapping("/Sug")
 public Vector<citta>  citta_consigliate() {
 		Citta_consigliate b= new Citta_consigliate();
 		b.Citta_consigliate();
@@ -58,10 +60,10 @@ public Vector<citta>  citta_consigliate() {
 }
 /**
  * 
- * @param filter_3
+ * @param filter_3 tipo body response chiama il metodo per settare i parametri del body
  * @return questa rotta applica i filtri che abbiamo creato e restituisce il risultato del filtro in formato json
- * @throws input_exception
- * @throws Exception_numero_citta
+ * @throws input_exception se nel body non viene inserito nulla
+ * @throws Exception_numero_citta non inserito il numero delle città
  * @throws ParseException
  */
 
@@ -78,10 +80,9 @@ if ( filter_3.body_check())
    }
 }
 /**
- * 
- * @param sta
+ * @param sta tipo body response chiama il metodo per settare i parametri del body
  * @return /Static effettua le statistiche, possono anche essere filtrate e restituisce un oggetto parametri_statistica in json 
- * @throws Exception_numero_citta
+ * @throws Exception_numero_citta non inserito il numero delle città
  * @throws ParseException
  */
 

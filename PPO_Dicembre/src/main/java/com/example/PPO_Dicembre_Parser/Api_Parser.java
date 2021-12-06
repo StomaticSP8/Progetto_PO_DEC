@@ -1,10 +1,6 @@
 package com.example.PPO_Dicembre_Parser;
 
-/**
- * @author Antonio Zaccardi
- * @author Francesco Cerrone
- *
- */
+
 import java.io.BufferedReader;
 import java.io.IOException;
 import java.io.InputStreamReader;
@@ -22,7 +18,11 @@ import com.example.PPO_Dicembre_Exception.Exception_numero_citta;
 
 import com.example.PPO_Dicembre_model.body_Response;
 
-
+/**
+ * @author Antonio Zaccardi
+ * @author Francesco Cerrone
+ *
+ */
 
 public class Api_Parser {
 	

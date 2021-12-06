@@ -1,13 +1,13 @@
 package com.example.PPO_Dicembre_model;
 
+
+
+import java.util.Vector;
 /**
  * @author Antonio Zaccardi
  * @author Francesco Cerrone
  *
  */
-
-import java.util.Vector;
-
 public class Citta_consigliate {
 	private Vector<citta> v;
 	

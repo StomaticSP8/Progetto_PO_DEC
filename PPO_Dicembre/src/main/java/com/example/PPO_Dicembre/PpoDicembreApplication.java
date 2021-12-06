@@ -17,7 +17,10 @@ import org.springframework.boot.autoconfigure.SpringBootApplication;
 @SpringBootApplication
 @ComponentScan("com.example.PPO_Dicembre_controller")
 public class PpoDicembreApplication {
-
+/**
+ * 
+ * @param args applicazione springboot
+ */
 	public static void main(String[] args) {
 		SpringApplication.run(PpoDicembreApplication.class, args);
 	}

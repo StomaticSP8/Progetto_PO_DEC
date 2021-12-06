@@ -1,10 +1,6 @@
 package com.example.PPO_Dicembre_Parser;
 
-/**
- * @author Antonio Zaccardi
- * @author Francesco Cerrone
- *
- */
+
 import java.net.MalformedURLException;
 import java.net.URL;
 import java.util.Vector;
@@ -14,7 +10,11 @@ import java.util.Vector;
 
 import com.example.PPO_Dicembre_model.body_Response;
 
-
+/**
+ * @author Antonio Zaccardi
+ * @author Francesco Cerrone
+ *
+ */
 
 public class Modifica_Url {
 	
@@ -26,10 +26,10 @@ body_Response body = new body_Response();
  
 
 
-public Modifica_Url()
-{
+//public Modifica_Url()
+//{
 	
-}
+//}
 public Modifica_Url(body_Response body)
 {
 	this.body.setLocation(body.getLocation());

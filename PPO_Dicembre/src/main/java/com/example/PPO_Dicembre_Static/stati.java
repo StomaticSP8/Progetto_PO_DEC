@@ -1,9 +1,5 @@
 package com.example.PPO_Dicembre_Static;
-/**
- * @author Antonio Zaccardi
- * @author Francesco Cerrone
- *
- */
+
 import java.util.Vector;
 
 import org.json.simple.JSONArray;
@@ -12,7 +8,11 @@ import org.json.simple.JSONObject;
 import com.example.PPO_Dicembre_Parser.Api_Parser;
 import com.example.PPO_Dicembre_model.body_Response;
 
-
+/**
+ * @author Antonio Zaccardi
+ * @author Francesco Cerrone
+ *
+ */
 
 public class  stati extends parametri_statistica
 {
