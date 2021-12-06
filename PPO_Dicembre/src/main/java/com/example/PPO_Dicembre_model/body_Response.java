@@ -120,7 +120,7 @@ public class body_Response {
 	/**
 	 * 
 	 * @return controlla se il body inserito dall'utente sia nullo se lo è lancia l'eccezzione
-	 * @throws input_exception
+	 * @throws input_exception il body è vuoto
 	 */
 	public boolean body_check() throws input_exception
 	{
