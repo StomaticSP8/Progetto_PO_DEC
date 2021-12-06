@@ -79,6 +79,7 @@ public class body_Response {
 /**
  * 
  * @param numero_citta setta il numero di città chieste dall'utente
+ * @return 
  */
 	public void setNumero_citta(int numero_citta) {
 		this.numero_citta = numero_citta;
