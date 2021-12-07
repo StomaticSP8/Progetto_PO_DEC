@@ -27,7 +27,7 @@ class testclass {
 		}
 	
 	@Test
-	@DisplayName("Corretta generazione dell'eccezione input_exception.")
+	@DisplayName("Corretta generazione dell'eccezione input_exception .")
 	void test() throws input_exception {
 		body_Response a=new body_Response();
 		
