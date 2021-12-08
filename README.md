@@ -43,7 +43,7 @@ Il nostro progetto permette all'utente di ricercare lavori attraverso il filtrag
 
 ***
 
-
+.
 <a name="rotte"></a>
 ## Rotte
 Le chiamate verranno gestite dalla porta:
