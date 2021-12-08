@@ -1,5 +1,5 @@
 # Progetto_PO_DEC
- <h1 align="center"><img src = "img/Bot_def.jpg" width="500"></h1>
+ <h1 align="center"><img src = "https://github.com/StomaticSP8/Progetto_PO_DEC/blob/prova_1/WhatsApp%20Image%202021-12-07%20at%2020.28.53.jpeg" width="500"></h1>
 
  <h1 align="center"> Progetto programmazione ad oggetti findwork </h1>
 
