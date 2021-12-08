@@ -69,16 +69,14 @@ public class Filter_date {
 				ko.add(dv.get(k));
 			for (int i=0; i<ko.size(); i++)
 			{
-				//System.out.println(ko.get(i));
+			
 				Object o= ko.get(i);
 				JSONObject k= (JSONObject) o;
 				String f=(String) k.get("date_posted");
 				
 						
 				Date date2= new SimpleDateFormat("yyyy-MM-dd").parse(f);
-				//System.out.println(date2);
-				//System.out.println(date1);
-				//System.out.println(date1.after(date2));
+			
 				if (date1.after(date2))
 				gh.add(k);
 				

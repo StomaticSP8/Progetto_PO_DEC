@@ -85,17 +85,16 @@ public class Api_Parser {
 			Modifica_Url po = new Modifica_Url(bo);
 			Vector<URL> Vurl= new Vector<URL>();
 			Vurl=po.piu_cit();
-			//System.out.println(Vurl);
+			
 			if (bo.getNumero_citta()==0)
 				throw new Exception_numero_citta();
 			
 			for(int i=0; (i<bo.getNumero_citta()) ; i++) {
 				
 				URL url=Vurl.get(i);
-				//System.out.println(url);
+				
 				HttpsURLConnection open=(HttpsURLConnection) url.openConnection();
 				open.addRequestProperty("Authorization","Token ba7fcc957ddce78afc39a2c3b1572e44e9ede3d4");
-				//open.addRequestProperty("Authorization=Bearer"+"1e1519fa5f8da87c7cbb53ad9de3460f7e4e1fc9", null);
 				open.setRequestProperty("Conten-Type", "application/json");
 				open.setRequestProperty("Accept", "application/json");
 				open.setDoOutput(true);
@@ -113,7 +112,7 @@ public class Api_Parser {
 						
 						JSONObject domain= (JSONObject)o;
 						v.add((JSONObject) domain.clone());
-					//av.add((JSONObject) domain.clone());
+					
 						av.addElement((JSONObject) v.get(k));
 						k++;
 					
@@ -123,7 +122,7 @@ public class Api_Parser {
 				
 				
 					}
-				//av.addElement((JSONObject) v.clone());;
+				
 				v.removeAllElements();
 				k=0;
 				
@@ -175,18 +174,18 @@ public class Api_Parser {
 		 try {
 			  
 			
-			 //URL url= new URL("https://findwork.dev/api/jobs/?location=london&search=react&sort_by=relevance");
+			
 			Modifica_Url po = new Modifica_Url(bo);
 			Vector<URL> Vurl= new Vector<URL>();
-			//System.out.println(Vurl);
+			
 			Vurl=po.piu_cit();
-			//System.out.println(Vurl);
+			
 			for(int i=0; i<bo.getNumero_citta(); i++) {
 				URL url=Vurl.get(i);
-				//System.out.println(url);
+				
 				HttpsURLConnection open=(HttpsURLConnection) url.openConnection();
 				open.addRequestProperty("Authorization","Token ba7fcc957ddce78afc39a2c3b1572e44e9ede3d4");
-				//open.addRequestProperty("Authorization=Bearer"+"1e1519fa5f8da87c7cbb53ad9de3460f7e4e1fc9", null);
+				
 				open.setRequestProperty("Conten-Type", "application/json");
 				open.setRequestProperty("Accept", "application/json");
 				open.setDoOutput(true);

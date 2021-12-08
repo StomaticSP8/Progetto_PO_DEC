@@ -59,7 +59,7 @@ public class Filter_Role_piu_cit {
 			Vector <JSONObject> vg= new Vector<JSONObject>();
 			Api_Parser hb = new Api_Parser(body);
 			Vector<JSONArray> a=hb.Parser_Array_tre_citta();
-			//System.out.println(a);+
+			
 			for  (int i=0; i<body.getNumero_citta();i++)
 			{
 				JSONArray y=a.get(i);
@@ -86,7 +86,7 @@ public class Filter_Role_piu_cit {
 			else {
 				Api_Parser lo= new Api_Parser(body);
 				lo.Parser_tre_citta();
-				System.out.println(lo.stampa_tre_citta_filter());
+				
 				 return lo.stampa_tre_citta_filter();
 				
 			}

@@ -87,19 +87,21 @@ if ( filter_3.body_check())
  * @return /Static effettua le statistiche, possono anche essere filtrate e restituisce un oggetto parametri_statistica in json 
  * @throws Exception_numero_citta non inserito il numero delle città
  * @throws ParseException
+ * @throws Exception_location 
  */
 
 @PostMapping ("/Static")
-public parametri_statistica statica (@RequestBody body_Response sta) throws Exception_numero_citta, ParseException
+public parametri_statistica statica (@RequestBody body_Response sta) throws Exception_numero_citta, ParseException, Exception_location
 {
-	sta.body_Response2();
+	if(sta.error(sta))
+		throw new Exception_location();
 	Filter_date fd=new Filter_date(sta);
 	
 	stati p= new stati();
 	parametri_statistica lop= new parametri_statistica();
 	Vector<String> vdfs=lop.carico_linguaggio();
 	 lop=  (p.percentuale_remote(fd.filter_date_tre_cit()));
-	lop.setAltri_lavori(p.altri_linguaggi_f(fd.filter_date_tre_cit(), vdfs));
+	lop.setAltri_linguaggi(p.altri_linguaggi_f(fd.filter_date_tre_cit(), vdfs));
 	return lop;
 	
 	

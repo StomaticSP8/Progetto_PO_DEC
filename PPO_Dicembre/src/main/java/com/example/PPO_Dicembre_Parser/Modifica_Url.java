@@ -26,10 +26,7 @@ body_Response body = new body_Response();
  
 
 
-//public Modifica_Url()
-//{
-	
-//}
+
 public Modifica_Url(body_Response body)
 {
 	this.body.setLocation(body.getLocation());
@@ -51,7 +48,7 @@ public Modifica_Url(body_Response body)
 	{
 		try {
 			URL url;
-			//Vector<URL> Vurl= new Vector<URL>();
+			
 			 url = new URL ("https://findwork.dev/api/jobs/"+"?search="+body.getKeywords()+"&source="+"&location="+body.getLocation()+"&employment_type="+body.getEmployment_type()+"&remote="+body.isRemote()+"&role="+body.getRole());
 			Vurl.add(url);
 			url = new URL("https://findwork.dev/api/jobs/"+"?search="+body.getKeywords()+"&source="+"&location="+body.getLocation2()+"&employment_type="+body.getEmployment_type()+"&remote="+body.isRemote()+"&role="+body.getRole());
@@ -67,27 +64,9 @@ public Modifica_Url(body_Response body)
 		}
 		return null;
 	}
-	public Vector<URL> filter_static()
-	{
-		try {
-			URL url;
-			//Vector<URL> Vurl= new Vector<URL>();
-			 url = new URL ("https://findwork.dev/api/jobs/"+"?search="+body.getKeywords()+"&source="+"&location="+body.getLocation()+"&employment_type="+body.getEmployment_type()+"&remote="+body.isRemote()+"&role="+body.getRole());
-			Vurl.add(url);
-			url = new URL("https://findwork.dev/api/jobs/"+"?search="+body.getKeywords()+"&source="+"&location="+body.getLocation2()+"&employment_type="+body.getEmployment_type()+"&remote="+body.isRemote()+"&role="+body.getRole());
-			Vurl.add(url);
-			url= new URL("https://findwork.dev/api/jobs/"+"?search="+body.getKeywords()+"&source="+"&location="+body.getLocation3()+"&employment_type="+body.getEmployment_type()+"&remote="+body.isRemote()+"&role="+body.getRole());
-			Vurl.add(url);
-			return Vurl;
-		} 
-		
-		catch (MalformedURLException e) {
-			// TODO Auto-generated catch block
-			e.printStackTrace();
-		}
-		return null;
+	
 	
 }
 	
-}
+
 

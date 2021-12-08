@@ -87,14 +87,14 @@ private int d;
 				sa.add((String) key.get(p));
 			}
 			
-				System.out.println(sa);
+			
 			
 			
 			for ( int z=0; z<sa.size(); z++)
 			{
 				for( int f=0; f<bh.size(); f++)
 				{
-					//System.out.println(cf);
+					
 					if(sa.get(z).contains(bh.get(f)))
 					{
 						lin.add(bh.get(f));

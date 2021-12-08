@@ -108,12 +108,55 @@ public class parametri_statistica {
 		this.lavoro_non_in_remoto = lavoro_non_in_remoto;
 	}
 
-	public Vector<String> getAltri_lavori() {
+
+	public Vector<String> getAltri_linguaggi() {
 		return altri_linguaggi;
 	}
-	public void setAltri_lavori(Vector<String> altri_lavori) {
-		this.altri_linguaggi = altri_lavori;
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+	public void setAltri_linguaggi(Vector<String> altri_linguaggi) {
+		this.altri_linguaggi = altri_linguaggi;
 	}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 	public Vector<String> getTop_5() {
 		return top_5;
 	}

@@ -99,24 +99,7 @@ public class body_Response {
 		this.location3 = location3;
 	}
 
-	public void  body_Response2()
-	{
-		if (this.location==null)
-		this.location="";
-	else if(this.employment_type==null)
-		this.employment_type="";
-	else if(this.remote==null)
-		this.remote="";
-	else if(this.role==null)
-		this.role="";
-	else if(this.keywords==null)
-		this.keywords="";
-	else if(this.location2==null)
-		this.location2="";
-	else if(this.location3==null)
-		this.location3="";
-			
-	}
+	
 	/**
 	 * 
 	 * @return controlla se il body inserito dall'utente sia nullo se lo è lancia l'eccezzione
