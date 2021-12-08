@@ -39,7 +39,7 @@ Il nostro progetto permette all'utente di ricercare lavori attraverso il filtrag
 
 *Sequance Diagram 
 
-![alt_text](https://github.com/StomaticSP8/Progetto_PO_DEC/blob/prova_1/work-project%20Sequence%20Diagram.jpg)
+![alt_text](https://github.com/StomaticSP8/Progetto_PO_DEC/blob/prova_1/work-project%20Sequence%20Diagram%20(2).jpg)
 
 ***
 
