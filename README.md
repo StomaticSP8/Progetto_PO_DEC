@@ -24,18 +24,18 @@ Il nostro progetto permette all'utente di ricercare lavori attraverso il filtrag
 
 *Use Case Diagram*
 
-![alt text](https://github.com/StomaticSP8/Progetto_PO_DEC/blob/prova_1/Screenshot%20(6).png)
+![alt text](https://github.com/StomaticSP8/Progetto_PO_DEC/blob/prova_1/use%20case%20diagram.png)
 
 ***
 
 *Class Diagram*
 
-![alt text](https://github.com/StomaticSP8/Progetto_PO_DEC/blob/prova_1/Screenshot%20(7).png)
+![alt text](https://github.com/StomaticSP8/Progetto_PO_DEC/blob/prova_1/class%20diagram.png)
 
 ***
 
 
-*Sequance Diagram (parte 1)*
+*Sequance Diagram 
 
 ![alt_text](https://github.com/StomaticSP8/Progetto_PO_DEC/blob/prova_1/work-project%20Sequence%20Diagram.jpg)
 
