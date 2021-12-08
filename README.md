@@ -32,7 +32,7 @@ Il nostro progetto permette all'utente di ricercare lavori attraverso il filtrag
 
 *Class Diagram*
 
-![alt text](https://github.com/StomaticSP8/Progetto_PO_DEC/blob/prova_1/class%20diagram.png)
+![alt text](https://github.com/StomaticSP8/Progetto_PO_DEC/blob/prova_1/class%20diagram%20(2).png)
 
 ***
 
