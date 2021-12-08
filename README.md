@@ -139,7 +139,8 @@ Abbiamo implementato anche una classe di test che testa l'eccezione ***input_exc
 La documentazione javadoc è presente in questo link [Javadoc](https://github.com/StomaticSP8/Progetto_PO_DEC/tree/prova_1/PPO_Dicembre/doc).
 
 <a name="note"></a>
-##note
+## Note
+
 Abbiamo provato a prendere i risultati delle 5 page ma i risultati filtrati erano inferiori a quelli implementati attraverso l'uml per questo abbiamo scelto di utilizzare l'url
 
 <a name="autor"></a>
