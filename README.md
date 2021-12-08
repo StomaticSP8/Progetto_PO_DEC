@@ -96,7 +96,7 @@ Il risultato sarà un vettore di JSONObject contenente tutti i risultati filtrat
 <a name=/Static></a>
 ## 3.    /Static
 
-La terza rotta è di tipo POST e il body viene scritto allo stesso modo del /Filter, vediamo un esempio:
+La terza rotta è di tipo POST e il body può essere scritto avvalendosi degli stessi parametri utilizzati nella rotta /Filter, ecco un esempio che ci restituirà la quantità di lavori in remoto, la percentuale di lavoro in remoto e non e altri linguaggi disponibili.
 
 ![alt_text](https://github.com/StomaticSP8/Progetto_PO_DEC/blob/prova_1/esempio%20static.png)
 
