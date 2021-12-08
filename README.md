@@ -69,7 +69,7 @@ Ora illustreremo alcuni esempi su cosa dare in richiesta e cosa dovete aspettarv
 
 La prima rotta è di tipo GET /Sug suggerisce all'utente 5 città americane che vengono restituite come un vettore di citta 
 
-![alt_text](https://github.com/ceviscar4/ProgettoPao/blob/main/Screenshot%20(9).png)
+![alt_text](https://github.com/StomaticSP8/Progetto_PO_DEC/blob/prova_1/esempio%20suggerite.png)
 
 <a name=/Filter></a>
 ## 2.   /Filter
@@ -87,7 +87,7 @@ ESEMPIO BODY
 }
 ```
 Il risultato sarà un vettore di JSONObject contenente tutti i risultati filtrati per (remote,keywords) per la prima locazione(location), per la seconda locazione(location2) e per la terza locazione(location3)..
-![alt_text](https://github.com/ceviscar4/ProgettoPao/blob/main/Screenshot%20(11).png)
+![alt_text](https://github.com/StomaticSP8/Progetto_PO_DEC/blob/prova_1/esempio%20filter.png)
 
 
 
@@ -96,7 +96,7 @@ Il risultato sarà un vettore di JSONObject contenente tutti i risultati filtrat
 
 La terza rotta è di tipo POST e il body viene scritto allo stesso modo del /Filter, vediamo un esempio:
 
-![alt_text](https://github.com/ceviscar4/ProgettoPao/blob/main/Screenshot%20(16).png)
+![alt_text](https://github.com/StomaticSP8/Progetto_PO_DEC/blob/prova_1/esempio%20static.png)
 
 <a name=Eccezioni></a>
 ## Eccezioni 
