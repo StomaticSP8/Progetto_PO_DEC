@@ -1,4 +1,6 @@
 # Progetto_PO_DEC
+<img src = "img/Bot_def.jpg" width="500">
+
  <h1 align="center"> Progetto programmazione ad oggetti findwork </h1>
 
 <p align="center">
