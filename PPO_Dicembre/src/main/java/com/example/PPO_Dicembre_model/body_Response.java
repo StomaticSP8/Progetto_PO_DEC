@@ -131,7 +131,30 @@ public class body_Response {
 	}
 	
 	
-	
+	public boolean error(body_Response bod) {
+		int f=0;
+		if(bod.getLocation()=="") {
+			
+		}
+		else {
+			f++;
+			if(bod.getLocation2()=="") {
+				
+			}
+			else {
+				f++;
+				if(bod.getLocation3()=="") {
+					
+				}
+				else 
+					f++;
+			}
+		}
+		if(f!=bod.getNumero_citta())
+			return true;
+		return false;
+		
+	}
 	
 	
 	

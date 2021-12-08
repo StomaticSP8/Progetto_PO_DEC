@@ -17,6 +17,7 @@ import org.springframework.web.bind.annotation.RequestMapping;
 import org.springframework.web.bind.annotation.RequestParam;
 import org.springframework.web.bind.annotation.RestController;
 
+import com.example.PPO_Dicembre_Exception.Exception_location;
 import com.example.PPO_Dicembre_Exception.Exception_numero_citta;
 import com.example.PPO_Dicembre_Exception.input_exception;
 import com.example.PPO_Dicembre_Filter.Filter_Role_piu_cit;
@@ -65,16 +66,18 @@ public Vector<citta>  citta_consigliate() {
  * @throws input_exception se nel body non viene inserito nulla
  * @throws Exception_numero_citta non inserito il numero delle città
  * @throws ParseException
+ * @throws Exception_location 
  */
 
 @PostMapping ("/Filter")
-public Vector<JSONObject> Filter_final (@RequestBody  body_Response filter_3) throws input_exception, Exception_numero_citta, ParseException
+public Vector<JSONObject> Filter_final (@RequestBody  body_Response filter_3) throws input_exception, Exception_numero_citta, ParseException, Exception_location
 {
 if ( filter_3.body_check())
 	throw new  input_exception();
    else
    {
-	  // filter_3.body_Response2();
+	   if( filter_3.error(filter_3))
+		   throw new Exception_location();
 		Filter_date vg= new Filter_date(filter_3);
 		return vg.filter_date_tre_cit();
    }
